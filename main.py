@@ -43,7 +43,7 @@ while count < n:
     print(f"------------------------------------------------\nTURN {count+1}")
     place = random.randint(0, count)
     letter = input(f"What letter in place {place} do you want to insert? Remember the alphabet is {A}\n")
-    while letter not in A:
+    while letter not in A or letter == "":
         letter = input(f"You chose the wrong letter! What letter in place {place} do you want to insert? Remember the alphabet is {A}\n")
     word.insert(place, letter)
     count += 1
